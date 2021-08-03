@@ -2,11 +2,21 @@
 .idea
 .vscode
 
-# Node
+# Node dependencies
 node_modules
+
+# Node debug
 npm-debug.log
 package-lock.json
 yarn.lock
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Composer
 vendor
