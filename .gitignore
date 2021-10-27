@@ -45,3 +45,7 @@ Thumbs.db
 *.lock
 cache
 lintfiles
+
+# Parcel relate files
+dist
+.cache
