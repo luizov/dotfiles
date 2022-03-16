@@ -1,23 +1,35 @@
 {
+  "window.zoomLevel": 0.2,
   "workbench.editor.wrapTabs": false,
-  "workbench.colorTheme": "Night Owl Light",
-  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.list.openMode": "doubleClick",
   "editor.suggestSelection": "first",
-  "editor.wordWrap": "on",
-  /*  "editor.rulers": [86], */
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.rulers": [86],
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-  /*   "editor.formatOnSave": true, */
-  "editor.codeActionsOnSave": null,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "editor.linkedEditing": true,
-  "editor.fontFamily": "MonoLisa",
+  "editor.fontFamily": "SF Mono",
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.lineHeight": 0,
   "editor.fontLigatures": "true",
-  "editor.wordWrapColumn": 100,
+  "editor.wordWrapColumn": 86,
   "editor.smoothScrolling": true,
+  "editor.inlineSuggest.enabled": true,
+  "breadcrumbs.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
 
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -35,6 +47,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "eslint.validate": ["javascript"],
+  "css.validate": false, // Disable css built-in lint
+  "scss.validate": false, // Disable scss built-in lint
+  "less.validate": false, // Disable less built-in lint
+  "stylelint.enable": true, // Enable sytlelint
 
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -60,14 +77,16 @@
   "files.eol": "\n",
   "liveServer.settings.donotVerifyTags": true,
 
-  "colorize.languages": [
-    "javascript",
-    "json"
-  ],
+  "colorize.languages": ["javascript", "json"],
 
-  "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+  "terminal.integrated.profiles.windows": {
+    "Windows PowerShell": {
+      "path": "pwsh.exe"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "'Consolas','MonoLisa',FiraFlott,Inconsolata-g for Powerline",
+  "terminal.integrated.fontFamily": "'SF Mono','MonoLisa',FiraFlott,Inconsolata-g for Powerline",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.copyOnSelection": true,
@@ -147,6 +166,17 @@
     "wordpress"
   ],
 
+  // HTML
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+  "auto-close-tag.SublimeText3Mode": false,
+
+  // Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
   // PHPCS
   "phpcs.enable": true,
   "phpcs.standard": "WordPress",
@@ -159,9 +189,5 @@
   "phpcbf.executablePath": "C:\\Users\\Asus\\AppData\\Roaming\\Composer\\vendor\\bin\\phpcbf.bat",
   "phpcbf.documentFormattingProvider": true,
   "phpcbf.onsave": true,
-  "phpcbf.standard": "WordPress",
-
-  "powermode.enabled": true,
-  "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false
+  "phpcbf.standard": "WordPress"
 }
